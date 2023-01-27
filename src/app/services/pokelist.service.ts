@@ -8,6 +8,7 @@ import {BehaviorSubject, Observable, Subject} from 'rxjs'
 export class PokelistService {
 
   namePoke = new BehaviorSubject<any>('https://pokeapi.co/api/v2/pokemon/gengar');
+  flagDetails = new BehaviorSubject<any>(0);
 
   constructor(private hhtp:HttpClient) { }
 
@@ -16,5 +17,9 @@ export class PokelistService {
   }
   public pokeInfo():Observable<any>{
     return this.namePoke.asObservable();
+  }
+  
+  public flag():Observable<any>{
+    return this.flagDetails.asObservable()
   }
 }

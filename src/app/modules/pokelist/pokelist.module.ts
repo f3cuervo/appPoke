@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -15,7 +16,8 @@ import { DetailsPagesComponent } from './details-pages/details-pages.component';
   ],
   imports: [
     CommonModule,
-    PokelistRoutingModule
+    PokelistRoutingModule,
+    SharedModule
   ]
 })
 export class PokelistModule { }

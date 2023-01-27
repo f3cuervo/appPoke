@@ -30,6 +30,9 @@
     transition: ease all .5s;
 }
 .contentName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 75%;
     color: white;
 }

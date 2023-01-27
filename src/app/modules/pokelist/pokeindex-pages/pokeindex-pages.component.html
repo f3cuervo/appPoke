@@ -1,9 +1,11 @@
+<app-header></app-header>
 <div class="contentManager">
-    <div class="contentList">
+    <div class="contentList" [ngClass]="{'ListOn':flag === 1}">
         <app-list-pages></app-list-pages>
     </div>
-    <div class="contentDetails">
+    <div class="contentDetails" [ngClass]="{'DetailsOn':flag === 1}">
         <app-details-pages></app-details-pages>
     </div>
 </div>
+<app-footer></app-footer>
 

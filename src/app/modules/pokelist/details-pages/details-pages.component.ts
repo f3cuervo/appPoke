@@ -21,4 +21,8 @@ export class DetailsPagesComponent {
       })
     })
   }
+  flagOff(){
+    this.listService.flagDetails.next(0);
+  }
+
 }

@@ -38,8 +38,9 @@ export class ListPagesComponent implements OnInit {
     }
   }
 
-  sendName(name:string){
+  sendInfo(name:string){
     this.listService.namePoke.next('https://pokeapi.co/api/v2/pokemon/'+name);
+    this.listService.flagDetails.next(1);
   }
 
 }
