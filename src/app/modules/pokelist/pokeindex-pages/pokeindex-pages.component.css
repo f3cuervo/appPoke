@@ -1,0 +1,13 @@
+.contentManager{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.contentList{
+    width: 70%;
+}
+.contentDetails{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}

@@ -1,0 +1,18 @@
+<div class="globalList">
+    <div class="contentTitle"></div>
+    <div class = "contentCards">
+        <div class="card" *ngFor="let pokemon of pokes" (click)="sendName(pokemon.name)">
+            <div class="contentPokeBall">
+                <img src="../../../../assets/pokeball.svg" alt="" width="50px">
+            </div>
+            <div class="contentName">
+                <p>{{pokemon.name}} <span><i class="bi bi-arrow-right"></i></span></p>
+            </div>
+        </div>
+    </div>
+    <div class="ContentButtons">
+        <button *ngIf="prev" (click)="gotchAll(prev)" (click)="counter('x')">Anterior</button>
+        <span>{{count}}/1279</span>
+    <button *ngIf="next" (click)="gotchAll(next)" (click)="counter('y')">Siguiente</button>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="contentDetails">
+    <div class="contentClose">
+        <span>X</span>
+    </div>
+    <div class="contentColor">
+        .
+    </div>
+    <div class="contentNameDetails">
+        <p class="pName">{{pokeDetails.name}}</p>
+        <p class="pId">#{{pokeDetails.id}}</p>
+    </div>
+    <!--IMG-->
+    <div class="contentImgDetails">
+        <img src={{pokeDetails.sprites.front_default}} alt="" width="200" class="pokeImg">
+    </div>
+    <!--Type-->
+    <div class="contentTypes">
+        <!--Tipo#1-->
+        <div class="type1">
+            <p>{{pokeDetails.types[0].type.name}}</p>
+        </div>
+        <!--Tipo#2-->
+        <div class="type2" *ngIf="pokeDetails.types[1]">
+            <p>{{pokeDetails.types[1].type.name}}</p>
+        </div>
+    </div>
+    <!--titleStats-->
+    <div class="contentTitleDetails">
+        <p>Base stats</p>
+    </div>
+    <!--stats bars-->
+    <div class="contentStats">
+        <!--HP-->
+        <div class="contentBar">
+            <label for="HP">{{pokeDetails.stats[0].stat.name}}: {{pokeDetails.stats[0].base_stat}}</label>
+            <progress id="HP" max="100" value={{pokeDetails.stats[0].base_stat}}> {{pokeDetails.stats[0].base_stat}}% </progress>
+        </div>
+        <!--ATK-->
+        <div class="contentBar">
+            <label for="ATK">{{pokeDetails.stats[1].stat.name}}: {{pokeDetails.stats[1].base_stat}}</label>
+            <progress id="ATK" max="100" value={{pokeDetails.stats[1].base_stat}}> {{pokeDetails.stats[1].base_stat}}% </progress>
+        </div>
+        <!--DEF-->
+        <div class="contentBar">
+            <label for="DEF">{{pokeDetails.stats[2].stat.name}}: {{pokeDetails.stats[2].base_stat}}</label>
+            <progress id="DEF" max="100" value={{pokeDetails.stats[2].base_stat}}> {{pokeDetails.stats[2].base_stat}}% </progress>
+        </div>
+        <!--SPD-->
+        <div class="contentBar">
+            <label for="SPD">{{pokeDetails.stats[3].stat.name}}: {{pokeDetails.stats[3].base_stat}}</label>
+            <progress id="SPD" max="100" value={{pokeDetails.stats[3].base_stat}}> {{pokeDetails.stats[3].base_stat}}% </progress>
+        </div>
+        <!--SP A-->
+        <div class="contentBar">
+            <label for="SPA">{{pokeDetails.stats[4].stat.name}}: {{pokeDetails.stats[4].base_stat}}</label>
+            <progress id="SPA" max="100" value={{pokeDetails.stats[4].base_stat}}> {{pokeDetails.stats[4].base_stat}}% </progress>
+        </div>
+        <!--SP D-->
+        <div class="contentBar">
+            <label for="SPD">{{pokeDetails.stats[4].stat.name}}: {{pokeDetails.stats[5].base_stat}}</label>
+            <progress id="SPD" max="100" value={{pokeDetails.stats[5].base_stat}}> {{pokeDetails.stats[5].base_stat}}% </progress>
+        </div>
+    </div>
+</div>

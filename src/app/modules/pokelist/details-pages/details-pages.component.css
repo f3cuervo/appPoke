@@ -1,0 +1,112 @@
+.contentDetails{
+    padding: 0;
+    margin: 0;
+    width:400px;
+    height: 100vh;
+}
+/*style icon close*/
+.contentClose{
+    display: flex;
+    justify-content: flex-end;
+}
+.contentClose span{
+    padding: 5px 12px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*style red figure*/
+.contentColor{
+    height: 30vh;
+    border-radius: 20px 20px 35% 35%;
+    background-color: #ED5564;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -42px;
+    position: absolute;
+    width: inherit;
+    z-index: -1;
+    box-shadow: 0px 3px 10px #737373c9;
+}
+/*styles name & id*/
+.contentNameDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: -5px;
+}
+.pName{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.pId{
+    font-size: 20px;
+}
+.contentNameDetails p{
+    line-height: 10px;
+}
+/*style img*/
+.contentImgDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+/*style types*/
+.contentTypes{
+    display: flex;
+    justify-content: space-evenly;
+}
+.type1, .type2{
+    background-color: #ED5564;
+    line-height: 1px;
+    height: 35px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 3px 10px #737373c9;
+    font-size: 15px;
+}
+/*style stats*/
+.contentTitleDetails{
+    text-align: center;
+    margin-top: 30px;
+}
+.contentTitleDetails p{
+    font-size: 35px;
+    color: #ED5564;
+    font-weight: bold;
+}
+.contentStats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    padding: 30px;
+}
+.contentBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contentBar label{
+    font-weight: bold;
+    color: #ED5564;
+}
+.contentBar progress{
+    width: 50%;
+    background-color: #ED5564;
+    border-radius: 20px;
+    color: #ED5564;
+}
+progress::-moz-progress-bar{ 
+    background: #ED5564;
+}
+progress::-webkit-progress-value{
+    background: #ED5564;
+}

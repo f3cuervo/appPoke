@@ -1,0 +1,76 @@
+.globalList{
+    display: flex;
+    flex-direction: column;
+}
+.contentCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.card{
+    display: flex;
+    width: 250px;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    background-color: #ED5564;
+    cursor: pointer;
+}
+.contentPokeBall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:25%;
+    border-radius: 0 50px 50px 0;
+    background-color: white;
+}
+.contentPokeBall img, .contentName span{
+    transition: ease all .5s;
+}
+.contentName{
+    width: 75%;
+    color: white;
+}
+
+/*hover card*/
+.card:hover .contentPokeBall>img{
+    transform: scale(1.1);
+    transform: rotate(-35deg);
+}
+.card:hover .contentName span{
+    margin-left: 10px;
+}
+/*Style buttons*/
+.ContentButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.ContentButtons button{
+    border-radius: 20px;
+    background-color: #ED5564;
+    padding: 10px 20px;
+    border: 0px;
+    color:white;
+
+}
+
+/*Responsive*/
+/*mobile*/
+@media (max-width:767px){
+    .contentCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .card{
+        width: 180px;
+    }
+    .contentPokeBall img {
+        width: 40px;
+    }
+}
